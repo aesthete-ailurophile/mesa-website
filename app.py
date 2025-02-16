@@ -62,5 +62,6 @@ def add_event():
     return redirect(url_for('dashboard'))
 
 if __name__ == '__main__':
-    init_db()
+    init_db()  # Ensure the database is created
     app.run(host='0.0.0.0', port=5000)
+
